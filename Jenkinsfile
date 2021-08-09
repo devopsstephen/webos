@@ -16,8 +16,17 @@ pipeline{
 
                       echo "mvn package"
 	       }
-	   }
-     }
+
+                   }
+
+		   stage('deploy'){
+
+                        steps{
+
+                           echo "deploy"
+			}
+		   }
+     } 
     
  
 }
